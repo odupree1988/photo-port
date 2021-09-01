@@ -22,13 +22,13 @@ function App() {
 
   return (
     <div>
-      <Nav>
+      <Nav
         categories={categories}
         setCurrentCategory={setCurrentCategory}
         currentCategory={currentCategory}
-      </Nav>
+      />
       <main>
-        <Gallery />
+        <Gallery currentCategory={currentCategory} />
         <About />
       </main>
     </div>
